@@ -1,4 +1,4 @@
-﻿namespace NZWalksApi.Models.Domains
+﻿namespace NZWalksApi.DataAcessLayer.Models.Domains
 {
     public class Walk
     {
@@ -18,7 +18,7 @@
 
         // Navigation Proporty  this is the connection between Difficulty and walk tables in database 
 
-        public Difficulty Difficulty { get; set;}
+        public Difficulty Difficulty { get; set; }
 
         // this is the connection between Walk and Region Tables in the data base
         public Region Region { get; set; }

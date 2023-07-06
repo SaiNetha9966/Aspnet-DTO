@@ -1,4 +1,4 @@
-﻿namespace NZWalksApi.Models.Domains
+﻿namespace NZWalksApi.DataAcessLayer.Models.Domains
 {
     public class Region
     {

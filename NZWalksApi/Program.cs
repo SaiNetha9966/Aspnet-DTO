@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using NZWalksApi.Data;
+using NZWalksApi.DataAcessLayer.Data;
+using NZWalksApi.DataAcessLayer.Repositories;
 
 internal class Program
 {
@@ -14,7 +15,12 @@ internal class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
+        // Injecting Db Context by using dependancy injection
         builder.Services.AddDbContext<NZWalksDbContext> (options => options.UseSqlServer(builder.Configuration.GetConnectionString("NZWalks")));
+
+        // Injecting Repository interface by using Dependancy injection
+
+        builder.Services.AddScoped<IRegionRepository, DbRegionRepository>();
 
         var app = builder.Build();
 
