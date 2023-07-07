@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using NZWalksApi.DataAcessLayer.Data;
+using NZWalksApi.DataAcessLayer.Mappers;
 using NZWalksApi.DataAcessLayer.Repositories;
 
 internal class Program
@@ -9,9 +10,7 @@ internal class Program
         var builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
-
         builder.Services.AddControllers();  
-        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
@@ -19,8 +18,10 @@ internal class Program
         builder.Services.AddDbContext<NZWalksDbContext> (options => options.UseSqlServer(builder.Configuration.GetConnectionString("NZWalks")));
 
         // Injecting Repository interface by using Dependancy injection
-
         builder.Services.AddScoped<IRegionRepository, DbRegionRepository>();
+
+        // Injectinh Automapper file "AutoMapperProfile" by using Dependancy Injection
+        builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
         var app = builder.Build();
 

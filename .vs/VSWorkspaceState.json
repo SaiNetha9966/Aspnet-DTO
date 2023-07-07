@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\NZWalksApi",
+    "\\NZWalksApi\\DataAcessLayer",
+    "\\NZWalksApi\\DataAcessLayer\\Controllers"
   ],
+  "SelectedNode": "\\NZWalksApi\\DataAcessLayer\\Controllers\\RegionController.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -12,9 +12,7 @@ namespace NZWalksApi.DataAcessLayer.Data
 
         // Theese three proporties create a new data base with three tables
         public DbSet<Difficulty> difficulties { get; set; }
-
         public DbSet<Region> regions { get; set; }
-
         public DbSet<Walk> walks { get; set; }
     }
 }

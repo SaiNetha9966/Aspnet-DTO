@@ -172,3 +172,5 @@ C:\Users\verit\OneDrive\Desktop\React\asp\Aspnet-DTO\NZWalksApi\obj\Debug\net6.0
 C:\Users\verit\OneDrive\Desktop\React\asp\Aspnet-DTO\NZWalksApi\obj\Debug\net6.0\NZWalksApi.pdb
 C:\Users\verit\OneDrive\Desktop\React\asp\Aspnet-DTO\NZWalksApi\obj\Debug\net6.0\NZWalksApi.genruntimeconfig.cache
 C:\Users\verit\OneDrive\Desktop\React\asp\Aspnet-DTO\NZWalksApi\obj\Debug\net6.0\ref\NZWalksApi.dll
+C:\Users\verit\OneDrive\Desktop\React\asp\Aspnet-DTO\NZWalksApi\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\verit\OneDrive\Desktop\React\asp\Aspnet-DTO\NZWalksApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
